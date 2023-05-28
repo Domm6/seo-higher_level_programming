@@ -4,3 +4,4 @@ def pow(a, b):
     for i in range(b - 1):
       num *= a
     print(num)
+    return num
