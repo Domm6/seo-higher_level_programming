@@ -1,6 +1,14 @@
 #!/usr/bin/python3
-def pow(a, b):
-    num = a
-    for i in range(b - 1):
-      num *= a
-    return num
+def power(base, exponent):
+    if exponent == 0:
+        return 1
+    elif exponent > 0:
+        result = base
+        for _ in range(exponent - 1):
+            result *= base
+        return result
+    else:
+        result = 1 / base
+        for _ in range(-exponent - 1):
+            result /= base
+        return result
