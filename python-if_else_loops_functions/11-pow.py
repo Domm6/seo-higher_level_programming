@@ -11,4 +11,4 @@ def pow(a, b):
         result = 1 / a
         for _ in range(-b - 1):
             result /= a
-        return '{:.17f}'.format(result)
+        return result
