@@ -11,6 +11,5 @@ def pow(a, b):
         result = 1 / a
         for _ in range(-b - 1):
             result /= a
-            
-        result = round(result,20)
+        result = round(result,35)
         return result
