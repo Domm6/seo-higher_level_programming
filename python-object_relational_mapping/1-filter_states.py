@@ -2,8 +2,7 @@
 """
 Module: list_states_starting_with_N
 
-This module connects to a MySQL database and lists\
-all states with names starting with 'N' from a specific table.
+This module connects to a MySQL database and lists all states with names starting with 'N' from a specific table.
 """
 
 import MySQLdb
@@ -16,8 +15,7 @@ if __name__ == "__main__":
     database = sys.argv[3]
 
     # Connect to MySQL server
-    db = MySQLdb.connect(host="localhost", port=3306,
-                         user=username, passwd=password, db=database)
+    db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
 
     # Create a cursor object to interact with the database
     cursor = db.cursor()
