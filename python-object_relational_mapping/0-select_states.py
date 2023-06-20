@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+Module: list_states_from_database
+
+This module connects to a MySQL database and lists all states from a specific table.
+"""
+
 import MySQLdb
 import sys
 
