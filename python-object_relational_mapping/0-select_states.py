@@ -2,7 +2,8 @@
 """
 Module: list_states_from_database
 
-This module connects to a MySQL database and lists all states from a specific table.
+This module connects to a MySQL database\
+and lists all states from a specific table.
 """
 
 import MySQLdb
