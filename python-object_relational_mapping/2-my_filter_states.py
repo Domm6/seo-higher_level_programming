@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Module: list_states_starting_with_N"""
+"""Script that displays all values in the states
+table of hbtn_0e_0_usa where name matches the argument"""
 
 import MySQLdb
 import sys
