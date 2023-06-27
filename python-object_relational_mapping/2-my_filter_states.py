@@ -28,9 +28,12 @@ if __name__ == "__main__":
 
     # Execute the SQL query to fetch states
     # starting with 'N' (case-insensitive)
-    query.execute("SELECT * FROM states "
+    query.execute("SELECT * FROM states " \
                    "WHERE BINARY name LIKE '{}' ORDER BY id ASC".format(state_name)
 
+    # Execute the query with user input
+    cursor.execute(query)    
+                  
     # Fetch all rows from the result set
     rows = cursor.fetchall()
 
