@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Module: list_states_starting_with_N
-"""
+"""Module: list_states_starting_with_N"""
 
 import MySQLdb
 import sys
