@@ -34,7 +34,7 @@ if __name__ == "__main__":
     rows = cursor.fetchall()
 
     # Display the results
-    for row in results:
+    for row in rows:
         print(row)
 
     # Close the cursor and database connection
