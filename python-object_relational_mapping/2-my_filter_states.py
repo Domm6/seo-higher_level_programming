@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""Script that displays all values in the states
-table of hbtn_0e_0_usa where name matches the argument"""
+"""
+Module: list_states_starting_with_N
+
+"""
 
 import MySQLdb
 import sys
@@ -26,8 +28,8 @@ if __name__ == "__main__":
 
     # Execute the SQL query to fetch states
     # starting with 'N' (case-insensitive)
-    cursor.execute("SELECT * FROM states "
-                   "WHERE BINARY name LIKE 'N%' ORDER BY id ASC".format(state_name)
+    query.execute("SELECT * FROM states "
+                   "WHERE BINARY name LIKE '{}' ORDER BY id ASC".format(state_name)
 
     # Fetch all rows from the result set
     rows = cursor.fetchall()
