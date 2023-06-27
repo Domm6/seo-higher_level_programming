@@ -27,11 +27,11 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     # Execute the SQL query to fetch states starting with 'N' (case-insensitive)
-    query = "SELECT * FROM states WHERE name LIKE 'N%' COLLATE utf8_general_ci ORDER BY id ASC"
-    cursor.execute(query)
+    cursor.execute("SELECT * FROM states "
+                   "WHERE BINARY name LIKE 'N%' ORDER BY id ASC")
 
     # Fetch all rows from the result set
-    results = cursor.fetchall()
+    rows = cursor.fetchall()
 
     # Display the results
     for row in results:
