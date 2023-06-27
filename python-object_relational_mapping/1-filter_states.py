@@ -2,7 +2,6 @@
 """
 Module: list_states_starting_with_N
 
-This module connects to a MySQL database and lists all states with names starting with 'N' from a specific table.
 """
 
 import MySQLdb
