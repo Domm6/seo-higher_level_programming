@@ -19,5 +19,8 @@ class State(Base):
     """
     Represents a state in the database with attributes id and name.
 
+    Attributes:
+        id (int): An auto-generated, unique integer representing the state's ID.
+        name (str): A string representing the state's name.
     """
     pass
